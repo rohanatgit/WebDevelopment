@@ -1,0 +1,39 @@
+.wrapper{
+    position: relative;
+    transition: 1s;
+    margin: 30px;
+    transform-style: preserve-3d;
+}
+
+
+body{
+    perspective: 800px;
+}
+
+div{
+    height: 250px;
+    width: 400px;
+    border: 1px solid #ccc;
+}
+
+.side-a,.side-b{
+    position: absolute;
+    font-size: 30px;
+    
+}
+
+
+.side-a{
+    background-color: lightcoral;
+    z-index: 1;
+
+}
+
+.side-b{
+    background-color: lightgreen;
+    z-index-2;
+}
+
+.wrapper:hover{
+    transform: rotateY(180deg);
+}
